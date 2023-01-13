@@ -1,24 +1,31 @@
- <center>
+ <div style="text-align: center;">
      <h1>XXX</h1>
- </center>
+ </div>
 
 ## 个人信息 
 
-* 性 别：男&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;年 龄：25  
-* 手 机：134XXXX3216 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;  邮 箱：XXXXX@XXX.com    
-* 专 业：计算机科学与计算 &emsp;&emsp;&emsp;&emsp;&emsp; 岗 位：研发工程师
+|                      |                            |
+|----------------------|----------------------------|
+| 姓 名：杨洪               | 院 校：河北科技大学 理工学院(2011-2015) |
+| 手 机：134XXXX3216      | 专 业：软件工程                   |
+| 邮 箱：1234xxxxx@qq.com | 学 历：统招本科                   |
 
-## 工作及教育经历
+## 工作经历
 
-* 前公司&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;2019.8~至今&emsp;&emsp;&emsp;&emsp;&emsp; 事业群名字-部门名字       
-* XXXX大学&emsp;&emsp;&emsp;&emsp;&emsp;2017.9~2019.7&emsp;&emsp;&emsp;&emsp; 计算机科学与技术专业-研究生         
-* XXXX大学&emsp;&emsp;&emsp;&emsp;&emsp;2013.9~2017.7&emsp;&emsp;&emsp;&emsp; 计算机科学与技术专业-本科  
+| 公司                  | 部门                 | 职位                    | 时间                |
+|:--------------------|:-------------------|:----------------------|:------------------|
+| 快手 (北京达佳互联信息技术有限公司) | 音视频技术部 / 编解码算法组    | 图像算法SDK开发工程师          | 2021.08 - 2023.01 |
+| 商汤 (北京市商汤科技开发有限公司)  | 移动智能事业群(MIG) / 画质组 | Android开发工程师(图像算法SDK) | 2019.03 - 2021.07 |
+| 北京中科奥森数据科技有限公司      | 研发部                | Android开发工程师(图像算法集成)  | 2018.05 - 2019.03 |
+| 世纪鼎利科技股份有限公司        | 大数据部               | Android开发工程师  | 2017.02 - 2018.05 |
 
-## 专业技能
 
-* 熟练使用 C++，掌握Go，了解 Java、Python、PHP 等编程语言
-* 掌握基础数据结构和算法的基本原理
-* 等等
+## 技能亮点
+
+* 熟练使用：C/C++编程语言；OpenCV图像处理库；OpenGL/OpenGL ES图形处理API及shader编程(GLSL)
+* 曾使用过：OpenCL异构计算API及kernel编程；Metal API及kernel编程；Direct3D11 API及shader编程(HLSL)；ARCore SDK
+* 其他技能：熟悉Java编程语言；了解Python编程语言；Android应用开发；
+* 工程能力：4年图像处理SDK的工程化经验，涉及`超级夜景`、`超分辨率`、`人像分割`、`降噪(kalman/screen-content-coding)`等传统及深度学习算法，有丰富的GPU算法的移植及优化经验，保障各重点项目正常交付、上线。
 
 ## 项目经历
 
