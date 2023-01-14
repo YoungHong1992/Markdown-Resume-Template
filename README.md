@@ -22,24 +22,52 @@
 
 ## 技能亮点
 
-* 熟练使用：C/C++编程语言；OpenCV图像处理库；OpenGL/OpenGL ES图形处理API及shader编程(GLSL)
-* 曾使用过：OpenCL异构计算API及kernel编程；Metal API及kernel编程；Direct3D11 API及shader编程(HLSL)；ARCore SDK
-* 其他技能：熟悉Java编程语言；了解Python编程语言；Android应用开发；
-* 工程能力：4年图像处理SDK的工程化经验，涉及`超级夜景`、`超分辨率`、`人像分割`、`降噪(kalman/screen-content-coding)`等传统及深度学习算法，有丰富的GPU算法的移植及优化经验，保障各重点项目正常交付、上线。
+* 熟练使用：C/C++编程语言；OpenCV图像处理库；OpenGL ES图像处理API及Shader编程(GLSL)。
+* 熟悉使用：OpenCL、Metal异构计算API及Kernel编程；Direct3D11 API及Shader编程(HLSL)；Java和Android应用开发。
+* 其他技能：了解Python编程语言、Shell脚本语言。
+* 工程能力：4年图像处理算法的C/C++工程化经验，涉及`超级夜景`、`超分辨率`、`人像分割`、`降噪(kalman/screen-content-coding)`、`锐化`、`绿幕抠图`等深度学习及传统算法，有丰富的GPU算法移植及优化经验，参与过自研跨平台图像渲染引擎开发。
 
 ## 项目经历
 
-1. 公司/学校 - XXweb服务器 - 独立开发 - 201508- 201512 
-    * 具体功能 
-    * 运用了那些技术，技术难点是
-    * 效果如何
-    * demo演示地址，github地址 
+1. 快手 - 自研跨平台图像渲染引擎MediaProcessor - 202108~202301
+    * 该引擎基于OpenGL ES研发，统一了GPU图像处理接口，支持Android/IOS/MacOS/Windows平台的跨平台GPU渲染。后对Apple平台添加Metal支持，对Windows平台添加Direct3D11支持，使框架能够更加高效地使用GPU。
+    * 参与OpenGL ES的研发及优化，修复相关BUG，提供多种算子Shader(GLSL)，完成MacOS和Windows平台的效果验证。
+    * 独自完成Windows平台的Direct3D11支持，提供多种算子Shader(HLSL)并验证效果。
+    * 协助参与Apple平台的Metal支持，提供多种算子Kernel并验证效果，提供debug-demo及自动化编译脚本。
+    * 协助参与验证SPIR-V跨平台Shader编译工具的转译效果，进行效果验证及BUG反馈。
 
-2. 公司/学校 - XX游戏 - 负责后端开发 - 201309- 201401 
-    * 具体功能 
-    * 运用了那些技术，技术难点是
-    * 效果如何
-    * demo演示地址，github地址 
+2. 快手 - 人像分割SDK(全平台) - 202108~202301
+    * 该算法将输入图片中的人像和背景进行分离：通过前处理->神经网络->后处理的算法流程，得到分割后的人像Mask返回给业务方。该项目顺利上线快手直播伴侣(Windows)、闪电会议(Mac/Windows)，效果及性能得到广泛好评。
+    * 完成算法的C/C++工程化，涉及OpenCV、推理引擎(TFLite、CoreML、OpenVINO、自研)、OpenGL等技术，统一调用接口，支持全平台调用。
+    * 针对低端MacOS和Windows终端，进行针对性优化，提升算法性能表现。
+    * 处理Windows平台因碎片化原因造成的GPU及推理引擎的各种BUG，与相关人员协作修复问题。
+    * 研发Android和IOS端Camera Demo，集成人像分割算法SDK，对产品组及相关业务方进行展示。
+
+3. 快手 - 其他图像算法工程化 - 202108~202301
+   * Kalman-Denoise: 基于卡尔曼滤波的通用降噪算法。独立完成OpenGL和Metal版本并交付。
+   * Screen Content Coding: 基于导向滤波和双边滤波，针对屏幕分享中的文字降噪、增强。独立完成Metal版本并上线。
+   * 锐化算法：基于双边滤波的通用锐化算法，针对纹理边缘进行增强。独立完成OpenGL版本并上线快手APP。
+   * 绿幕抠图A：基于色彩空间转换和直方图统计，计算出待抠掉的背景颜色区间并抠除。独立完成OpenGL版本并上线快手直播伴侣(Windows)。
+   * 绿幕抠图B：基于色彩空间转换和快速导向滤波，计算输入图和绿幕的diff-mask，根据此mask进一步计算待抠除区域。独立完成OpenGL版本。
+
+4. 商汤 - SenseSR图像超分辨率SDK - 202006~202107
+   * 该算法基于多帧融合(opticalflow、homegraphy、pyramid、guidedfilter)，并通过深度学习网络来降噪的方式，来实现超分辨率的效果。后续增加了HDR功能。项目服务于小米、Vivo、传音、荣耀等手机厂商。
+   * 参与日常开发工作，重点负责过edge_smooth、HDR等功能模块的研发(C++、OpenCL)。
+   * 完成部分算子的OpenCL Kernel，在高通GPU上实现异步计算加速，持续优化访存及Kernel代码。
+   * 负责OpenCL效果一致性校验，性能profile。
+   * 负责超分工程的PPL3(公司内部模型推演工具)集成、测试、升级工作，并编写相关脚本完成自动化。
+   * 负责快速定位客户反馈的BUG，并与相关同事沟通协作，处理相关问题并进行迭代。
+
+5. 商汤 - SoftISP超级夜景SDK+芯片固化 - 201906~202006
+   * 该算法基于多帧融合，通过多帧不同ISO下的夜景图像，融合后进行输出。后该项目在小米芯片上进行了固化。
+   * 参与日常开发工作，重点负责过OpenCV函数的抽取、固化工作中C++定点化代码的翻译。
+   * 完成SDK中途退出逻辑，在多线程下添加退出点，并处理内存释放的问题。
+   * 编写Python脚本，对源码中的关键字进行混淆替换，保证源码安全性。
+   * 负责自动化仿真测试、性能profile、定位解决相关BUG。
+
+6. 商汤 - 其他项目 - 201903~202012
+   * 人像分割SDK：负责接入人像分割SDK，研发Camera Demo，编写高斯滤波等Shader进行背景处理。该项目服务于韩国Snow公司。
+   * AR空间笔刷: 接入公司SenseAR SDK(SLAM)，实现增强现实效果。通过OpenGL绘制，将Camera捕获到的图像与虚拟信息巧妙地融合，在手机界面中展示空间中的线段、文字、图片等功能。
 
 ## 获奖经历
 * XXX 优秀新人
