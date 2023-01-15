@@ -1,8 +1,5 @@
 
 # 个人简历
-杨洪，统招本科，7年研发经验，4年图像处理算法的C/C++工程化经验，涉及`超级夜景`、`超分辨率`、`人像分割`、`降噪`、`锐化`、`绿幕抠图`等深度学习及传统算法，有丰富的GPU算法移植及优化经验，参与过自研跨平台图像渲染引擎的开发。
-
-关键词：图像处理、C/C++、OpenCV、GPU、渲染、OpenGL ES、OpenCL、Metal、Direct3D、Shader、Kernel
 
 ## 基本信息
 
@@ -12,6 +9,13 @@
 | 手 机：134XXXX3216      | 专 业：软件工程                   |
 | 邮 箱：1234xxxxx@qq.com | 学 历：统招本科                   |
 
+## 技能亮点
+* 工程化能力：7年研发经验，4年图像处理算法的C/C++工程化经验，涉及`超级夜景`、`超分辨率`、`人像分割`、`降噪`、`锐化`、`绿幕抠图`等深度学习及传统算法，有丰富的GPU算法移植及优化经验，参与过自研跨平台图像渲染引擎的开发。
+* 熟练使用：C/C++编程语言；OpenCV图像处理库；OpenGL ES图像处理API及Shader编程(GLSL)。
+* 熟悉使用：OpenCL、Metal异构计算API及Kernel编程；Direct3D11 API及Shader编程(HLSL)；Java和Android应用开发。
+* 其他技能：了解Python编程语言、Shell脚本语言。
+* 关键词：图像处理、C/C++、OpenCV、GPU、渲染、OpenGL ES、OpenCL、Metal、Direct3D、Shader、Kernel
+
 ## 工作经历
 
 | 公司                  | 部门                 | 职位                    | 时间                |
@@ -20,12 +24,6 @@
 | 商汤 (北京市商汤科技开发有限公司)  | 移动智能事业群(MIG) / 画质组 | Android开发工程师(图像算法SDK) | 2019.03 - 2021.07 |
 | 北京中科奥森数据科技有限公司      | 研发部                | Android开发工程师(图像算法集成)  | 2018.05 - 2019.03 |
 | 世纪鼎利科技股份有限公司        | 大数据部               | Android开发工程师  | 2017.02 - 2018.05 |
-
-
-## 技能亮点
-* 熟练使用：C/C++编程语言；OpenCV图像处理库；OpenGL ES图像处理API及Shader编程(GLSL)。
-* 熟悉使用：OpenCL、Metal异构计算API及Kernel编程；Direct3D11 API及Shader编程(HLSL)；Java和Android应用开发。
-* 其他技能：了解Python编程语言、Shell脚本语言。
 
 ## 项目经历
 
